@@ -1,38 +1,65 @@
+
 .App {
+  background-color: #fafafa;
+  padding: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Product card styling */
+.product-card {
+  margin: 20px auto;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.product-card:hover {
+  transform: scale(1.05);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Product image styling */
+.product-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #e5e5e5;
 }
 
-.App-link {
-  color: #61dafb;
+/* Product name styling */
+.product-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Product price styling */
+.product-price {
+  font-size: 1.25rem;
+  color: #007bff;
+  margin-top: 5px;
+}
+
+/* Product description styling */
+.product-description {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 15px;
+}
+
+/* Greeting message styling */
+.greeting-message {
+  margin-top: 40px;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/* Greeting image styling */
+.greeting-image {
+  margin-top: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #007bff;
 }
